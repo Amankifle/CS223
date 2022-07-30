@@ -9,3 +9,14 @@ C:\Users\amank\source\repos\LabFirstGUI\LabFirstGUI\obj\Debug\LabFirstGUI.csproj
 C:\Users\amank\source\repos\LabFirstGUI\LabFirstGUI\obj\Debug\LabFirstGUI.csproj.CoreCompileInputs.cache
 C:\Users\amank\source\repos\LabFirstGUI\LabFirstGUI\obj\Debug\LabFirstGUI.exe
 C:\Users\amank\source\repos\LabFirstGUI\LabFirstGUI\obj\Debug\LabFirstGUI.pdb
+C:\Users\amank\OneDrive\Documents\GitHub\CS223_Assignment\LabFirstGUI\LabFirstGUI\bin\Debug\LabFirstGUI.exe.config
+C:\Users\amank\OneDrive\Documents\GitHub\CS223_Assignment\LabFirstGUI\LabFirstGUI\bin\Debug\LabFirstGUI.exe
+C:\Users\amank\OneDrive\Documents\GitHub\CS223_Assignment\LabFirstGUI\LabFirstGUI\bin\Debug\LabFirstGUI.pdb
+C:\Users\amank\OneDrive\Documents\GitHub\CS223_Assignment\LabFirstGUI\LabFirstGUI\obj\Debug\LabFirstGUI.csproj.AssemblyReference.cache
+C:\Users\amank\OneDrive\Documents\GitHub\CS223_Assignment\LabFirstGUI\LabFirstGUI\obj\Debug\LabFirstGUI.csproj.SuggestedBindingRedirects.cache
+C:\Users\amank\OneDrive\Documents\GitHub\CS223_Assignment\LabFirstGUI\LabFirstGUI\obj\Debug\LabFirstGUI.Form1.resources
+C:\Users\amank\OneDrive\Documents\GitHub\CS223_Assignment\LabFirstGUI\LabFirstGUI\obj\Debug\LabFirstGUI.Properties.Resources.resources
+C:\Users\amank\OneDrive\Documents\GitHub\CS223_Assignment\LabFirstGUI\LabFirstGUI\obj\Debug\LabFirstGUI.csproj.GenerateResource.cache
+C:\Users\amank\OneDrive\Documents\GitHub\CS223_Assignment\LabFirstGUI\LabFirstGUI\obj\Debug\LabFirstGUI.csproj.CoreCompileInputs.cache
+C:\Users\amank\OneDrive\Documents\GitHub\CS223_Assignment\LabFirstGUI\LabFirstGUI\obj\Debug\LabFirstGUI.exe
+C:\Users\amank\OneDrive\Documents\GitHub\CS223_Assignment\LabFirstGUI\LabFirstGUI\obj\Debug\LabFirstGUI.pdb
