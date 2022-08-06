@@ -24,6 +24,16 @@ namespace LabFirstGUI
             Boolean x = false;
             product p = new product();
             Regex r = new Regex(@"^[0-9]+$");
+            if (radioButton1.Checked)
+                p.gender = 'M';
+            else if (radioButton2.Checked)
+                p.gender = 'F';
+            else
+            {
+                errorProvider1.SetError(radioButton1, "choose gender");
+                errorProvider1.SetError(radioButton2, "choose gender");
+                x = true;
+            }
             try
             {
               errorProvider1.Clear();
@@ -87,17 +97,20 @@ namespace LabFirstGUI
 
         private void button3_Click(object sender, EventArgs e)
         {
-            textBox4.Text = null;
+            textBox4.Clear();
             textBox1.Text = null;
             textBox2.Text = null;
             textBox5.Text = null;
             textBox3.Text=null;
     }
+
+    
     }
     public class product
     {
        
         public String Object_name { get; set; }
+        public char gender { get; set; }
         public int number { get; set; }
         public String date { get; set; }
         public Double Inventory_number { get; set; }
