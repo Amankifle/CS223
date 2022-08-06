@@ -19,10 +19,12 @@ namespace LabFirstGUI
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
-            if (textBox1.Text=="admin" && textBox2.Text=="admin")
+            string username = "admin";
+            string password = "admin";
+
+            if (textBox1.Text== username && textBox2.Text== password)
             {
-                 Form1 Form1 = new Form1();
+                 Form1 Form1 = new Form1(username);
                 this.Hide();
                 Form1.Show();
             }

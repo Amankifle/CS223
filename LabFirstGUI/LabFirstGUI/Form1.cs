@@ -14,9 +14,11 @@ namespace LabFirstGUI
     public partial class Form1 : Form
     {
         
-        public Form1()
+        public Form1(string username)
         {
             InitializeComponent();
+            label8.Text = username;
+
         }
 
         private void button1_Click(object sender, EventArgs e)
