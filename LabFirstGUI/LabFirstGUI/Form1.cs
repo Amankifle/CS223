@@ -13,7 +13,7 @@ namespace LabFirstGUI
 {
     public partial class Form1 : Form
     {
-        
+        public product p = new product();
         public Form1(string username)
         {
             InitializeComponent();
@@ -24,7 +24,7 @@ namespace LabFirstGUI
         private void button1_Click(object sender, EventArgs e)
         {
             Boolean x = false;
-            product p = new product();
+            
             Regex r = new Regex(@"^[0-9]+$");
             if (radioButton1.Checked)
                 p.gender = 'M';
@@ -32,8 +32,7 @@ namespace LabFirstGUI
                 p.gender = 'F';
             else
             {
-                errorProvider1.SetError(radioButton1, "choose gender");
-                errorProvider1.SetError(radioButton2, "choose gender");
+                MessageBox.Show("gender not selected");
                 x = true;
             }
             try
@@ -87,8 +86,14 @@ namespace LabFirstGUI
             {
                 p.date = dateTimePicker1.Text;
                 p.save();
-                dataGridView1.DataSource = null;
-                dataGridView1.DataSource = product.Getproduct();
+                radioButton1.Checked = false;
+                radioButton2.Checked = false;
+                textBox4.Clear();
+                textBox1.Text = null;
+                textBox2.Text = null;
+                textBox5.Text = null;
+                textBox3.Text = null;
+
             }
 
         }
@@ -123,11 +128,19 @@ namespace LabFirstGUI
         public void save()
         {
             list.Add(this);
-            //MessageBox.Show($"Product {Object_name} Added");
+            MessageBox.Show($"Product {Object_name} has been Added");
         }
-        public static List<product> Getproduct()
+        public static  List<product> Getproduct()
         {
             return list;
+        }
+        public static product Searchproduct(String name)
+        {
+            return list.Find(product => product.Object_name == name);
+        }
+        public static List<product> GetAllproduct(String name)
+        {
+            return list.FindAll(product => product.Object_name == name);
         }
     }
 }

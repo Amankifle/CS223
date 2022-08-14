@@ -21,3 +21,6 @@ C:\Users\amank\OneDrive\Documents\GitHub\CS223_Assignment\LabFirstGUI\LabFirstGU
 C:\Users\amank\OneDrive\Documents\GitHub\CS223_Assignment\LabFirstGUI\LabFirstGUI\obj\Debug\LabFirstGUI.exe
 C:\Users\amank\OneDrive\Documents\GitHub\CS223_Assignment\LabFirstGUI\LabFirstGUI\obj\Debug\LabFirstGUI.pdb
 C:\Users\amank\OneDrive\Documents\GitHub\CS223_Assignment\LabFirstGUI\LabFirstGUI\obj\Debug\LabFirstGUI.Form2.resources
+C:\Users\amank\OneDrive\Documents\GitHub\CS223_Assignment\LabFirstGUI\LabFirstGUI\obj\Debug\LabFirstGUI.mainform.resources
+C:\Users\amank\OneDrive\Documents\GitHub\CS223_Assignment\LabFirstGUI\LabFirstGUI\obj\Debug\LabFirstGUI.viewform.resources
+C:\Users\amank\OneDrive\Documents\GitHub\CS223_Assignment\LabFirstGUI\LabFirstGUI\obj\Debug\LabFirstGUI.searchform.resources
