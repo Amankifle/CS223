@@ -90,6 +90,7 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(275, 26);
             this.dateTimePicker1.TabIndex = 3;
+            this.dateTimePicker1.Value = new System.DateTime(2022, 8, 18, 0, 0, 0, 0);
             // 
             // label3
             // 
@@ -243,7 +244,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(878, 35);
+            this.label8.Location = new System.Drawing.Point(855, 35);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(92, 32);
             this.label8.TabIndex = 21;
@@ -254,7 +255,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(1016, 491);
+            this.ClientSize = new System.Drawing.Size(1009, 491);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button3);

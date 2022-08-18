@@ -45,12 +45,14 @@
             this.productToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1102, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(1148, 33);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // productToolStripMenuItem
             // 
+            this.productToolStripMenuItem.Checked = true;
+            this.productToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.productToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addNewProductToolStripMenuItem,
             this.viewAllProductToolStripMenuItem,
@@ -62,7 +64,9 @@
             // 
             // addNewProductToolStripMenuItem
             // 
+            this.addNewProductToolStripMenuItem.Enabled = false;
             this.addNewProductToolStripMenuItem.Name = "addNewProductToolStripMenuItem";
+            this.addNewProductToolStripMenuItem.RightToLeftAutoMirrorImage = true;
             this.addNewProductToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.addNewProductToolStripMenuItem.Text = "add new product";
             this.addNewProductToolStripMenuItem.Click += new System.EventHandler(this.addNewProductToolStripMenuItem_Click);
@@ -92,13 +96,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1102, 574);
+            this.ClientSize = new System.Drawing.Size(1148, 574);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "mainform";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "mainform";
+            this.Load += new System.EventHandler(this.mainform_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

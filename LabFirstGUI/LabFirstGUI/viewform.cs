@@ -18,11 +18,24 @@ namespace LabFirstGUI
             InitializeComponent(); 
         }
 
-        
-private void button1_Click(object sender, EventArgs e)
+
+        private void viewform_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = null;
-            dataGridView1.DataSource = product.Getproduct();
+            if (product.list.Count < 1)
+                MessageBox.Show("No product has been added.");
+            else { 
+            flowLayoutPanel1.Controls.Clear();
+                foreach (var item in product.Getproduct())
+                {
+                    productcard p = new productcard();
+                    p.Product = item.Object_name;
+                    p.Product1 = item.number.ToString();
+                    p.Product2 = item.Inventory_number.ToString();
+                    p.Product3 = item.date;
+                    p.Product4 = item.price.ToString();
+                    flowLayoutPanel1.Controls.Add(p);
+                }
+            }
         }
     }
 }

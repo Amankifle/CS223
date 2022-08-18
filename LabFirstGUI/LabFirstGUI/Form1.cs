@@ -13,7 +13,7 @@ namespace LabFirstGUI
 {
     public partial class Form1 : Form
     {
-        public product p = new product();
+        
         public Form1(string username)
         {
             InitializeComponent();
@@ -24,7 +24,7 @@ namespace LabFirstGUI
         private void button1_Click(object sender, EventArgs e)
         {
             Boolean x = false;
-            
+            product p = new product();
             Regex r = new Regex(@"^[0-9]+$");
             if (radioButton1.Checked)
                 p.gender = 'M';
@@ -50,7 +50,7 @@ namespace LabFirstGUI
                 errorProvider2.Clear();
                 p.Inventory_number= int.Parse(textBox2.Text);
             }
-            catch (Exception e2)
+            catch (Exception e1)
             {
                 x= true;
                 errorProvider2.SetError(textBox2, "Inventory Number is invalid");
@@ -124,7 +124,7 @@ namespace LabFirstGUI
         public Double price { get; set; }
         public Double count { get; set; }
 
-        static List<product> list = new List<product>();
+        public static List<product> list = new List<product>();
         public void save()
         {
             list.Add(this);
