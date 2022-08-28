@@ -21,7 +21,8 @@ namespace LabFirstGUI
 
         private void viewform_Load(object sender, EventArgs e)
         {
-            if (product.list.Count < 1)
+           int n=sqlconnection.getTotalproduct();
+            if (n < 1)
                 MessageBox.Show("No product has been added.");
             else { 
             flowLayoutPanel1.Controls.Clear();
@@ -33,9 +34,19 @@ namespace LabFirstGUI
                     p.Product2 = item.Inventory_number.ToString();
                     p.Product3 = item.date;
                     p.Product4 = item.price.ToString();
+                    p.Click += card_click;
+                    p.Click += (object s, EventArgs e1) =>{
+                       
+                    };
                     flowLayoutPanel1.Controls.Add(p);
                 }
             }
         }
+        private void card_click(object sender, EventArgs e)
+        {
+            MessageBox.Show("");
+
+        }
+
     }
 }

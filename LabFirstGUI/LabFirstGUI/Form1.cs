@@ -18,7 +18,7 @@ namespace LabFirstGUI
         {
             InitializeComponent();
             label8.Text = username;
-
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -125,14 +125,20 @@ namespace LabFirstGUI
         public Double count { get; set; }
 
         public static List<product> list = new List<product>();
+       public static int getcount()
+        {
+            return list.Count;
+        }
         public void save()
         {
             list.Add(this);
-            MessageBox.Show($"Product {Object_name} has been Added");
+            sqlconnection.insertpproduct(this);
         }
         public static  List<product> Getproduct()
         {
-            return list;
+            List<product> temp = new List<product>();
+            sqlconnection.selectallpproduct(temp);
+            return temp;
         }
         public static product Searchproduct(String name)
         {

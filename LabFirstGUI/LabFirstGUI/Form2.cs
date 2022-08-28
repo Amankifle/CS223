@@ -15,6 +15,8 @@ namespace LabFirstGUI
     {
         public Form2()
         {
+            product.list.Clear();
+            sqlconnection.selectallpproduct(product.list);
             InitializeComponent();
         }
 
@@ -40,5 +42,6 @@ namespace LabFirstGUI
             }
           
         }
+
     }
 }

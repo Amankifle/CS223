@@ -37,7 +37,7 @@
             this.flowLayoutPanel1.AutoSize = true;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(32, 26);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(795, 400);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(778, 400);
             this.flowLayoutPanel1.TabIndex = 2;
             // 
             // viewform

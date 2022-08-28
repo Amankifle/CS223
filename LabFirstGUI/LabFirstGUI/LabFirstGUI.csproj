@@ -79,6 +79,7 @@
     <Compile Include="searchform.Designer.cs">
       <DependentUpon>searchform.cs</DependentUpon>
     </Compile>
+    <Compile Include="sqlconnection.cs" />
     <Compile Include="viewform.cs">
       <SubType>Form</SubType>
     </Compile>
